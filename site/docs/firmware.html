@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Firmware: DataBeat OS and the Korg updater — DataBeat</title><link rel="stylesheet" href="../site.css"></head><body><main class="doc"><header class="top"><a class="brand" href="https://micheledatabeat.github.io/"><img src="../assets/databeat-mark.svg" alt="DataBeat" width="32" height="32"><span>DataBeat · VolcaStudio XL</span></a></header><h1 id="firmware-databeat-os-and-the-korg-updater">Firmware: DataBeat OS and the Korg updater</h1>
+<p><strong>Returning to Korg?</strong> Power on with <strong>MEMORY + PLAY</strong> to enter forced update mode. Select the original Korg updater in Studio and wait for <strong>End on the Volca</strong>. See <a href="return-to-korg.html">Return to Korg firmware</a>.</p>
+<p>VolcaStudio XL installs <strong>DataBeat OS 1.0</strong> on the <strong>first-generation Korg Volca Sample</strong> (Volca Sample 2 is not supported). Studio contains no firmware. You download the official Korg updater yourself; Studio builds DataBeat OS 1.0 from it on your computer, checks the result and keeps both in its firmware library:</p>
+<ul>
+<li><strong>DataBeat OS 1.0</strong>: to install DataBeat OS (production, hardware tested);</li>
+<li><strong>Korg volca sample 1.42</strong>: to return the instrument to Korg's own firmware.</li>
+</ul>
+<p>The firmware list shows exactly these two entries, in the Desktop App and in the Browser App. Studio contains the pinned DataBeat OS patch, not complete firmware. DataBeat OS offers Predictability with 24 choices, eight independent bar choices per part, vinyl stop on LIVE pads 8–11 and visible notes in PrEd and Time. At startup the display scrolls <strong>dAtAbEAt OS</strong>. See the <a href="databeat-os.html">DataBeat OS manual</a>.</p>
+<h2 id="1--download-the-official-korg-updater">1 · Download the official Korg updater</h2>
+<ol>
+<li>Open Korg's <a href="https://www.korg.com/us/support/download/software/0/370/1475/">volca sample download page</a>.</li>
+<li>Read Korg's software licence agreement shown on that page. Downloading means you accept it.</li>
+<li>Under <strong>System Updater</strong>, download version <strong>1.42</strong>: <code>volcasample_updater_1_42.zip</code> (about 3.1 MB). Version 1.3.0 cannot be used.</li>
+<li>Keep the zip as it is. Studio accepts the zip itself or the <code>volcasample_sys_0142.wav</code> inside it. Do not convert, trim or re-save the WAV.</li>
+</ol>
+<p>If the download page moves, search Korg's support site for <em>volca sample System Updater 1.42</em>. Expected SHA-256 values, if you want to check:</p>
+<div style="overflow-x: auto;" tabindex="0"><table><tr><th>File</th><th>SHA-256</th></tr><tr><td><code>volcasample_updater_1_42.zip</code></td><td><code>f0df310b8bd43b6367dbd0c54ba75e3db53942087e1a4b1ae049f8f08e1731f3</code></td></tr><tr><td><code>volcasample_sys_0142.wav</code> (inside the zip)</td><td><code>8fe4f43c333a753d589a4d7eff7859e8fce7155cf54b889f4848d595721a55a9</code></td></tr></table></div>
+<p>On Linux use <code>sha256sum FILE</code>, on macOS <code>shasum -a 256 FILE</code>, on Windows <code>Get-FileHash FILE -Algorithm SHA256</code>. Studio checks the WAV for you anyway.</p>
+<h2 id="2--add-it-to-studio">2 · Add it to Studio</h2>
+<div style="overflow-x: auto;" tabindex="0"><table><tr><th>App</th><th>Where</th><th>Action</th></tr><tr><td>Browser App</td><td><strong>Firmware</strong></td><td><strong>Choose the Korg 1.42 updater…</strong></td></tr><tr><td>Desktop App</td><td><strong>04 / Firmware</strong></td><td><strong>Add Korg 1.42 updater…</strong></td></tr></table></div>
+<p>Studio reads the updater, builds DataBeat OS 1.0 and checks the result: the updater and the built image must match their pinned SHA-256 values, or nothing is saved. Any other file is refused. Building takes a few seconds, needs no internet connection and plays no audio. Adding the same file again changes nothing.</p>
+<h2 id="3--install-databeat-os-or-restore-korg-142">3 · Install DataBeat OS (or restore Korg 1.42)</h2>
+<p>Use reliable power. Stop other computer audio, including notifications.</p>
+<ol>
+<li>Select <strong>DataBeat OS 1.0</strong>, or <strong>Korg volca sample 1.42</strong> to return to Korg's firmware.</li>
+<li>Choose the audio output connected directly to the Volca's <strong>SYNC IN</strong>. Disconnect speakers and headphones from that output. Disable EQ, normalization, crossfade and other audio processing.</li>
+<li>To install DataBeat OS, power on with <strong>FUNC + PLAY</strong>; the display reads <strong>UPdt</strong>. To return to Korg, power on with <strong>MEMORY + PLAY</strong> instead; the display reads <strong>UPdt with the final dot lit</strong>. Release the buttons before sending. Normal update mode can reject the older Korg updater with a version error.</li>
+<li>Start the guided update in Studio with <strong>Begin update…</strong> and confirm. Do not interrupt playback or switch off the Volca. The transfer lasts about 40 seconds.</li>
+<li>Wait for <strong>End</strong> on the Volca, then power off and on again. At startup the display scrolls <strong>dAtAbEAt OS</strong>.</li>
+</ol>
+<p>Studio asks for confirmation before sending. Firmware audio is a data signal: never listen to it through speakers or headphones. <strong>Signals sent</strong> means the computer finished playing; it is not installation confirmation. Check <strong>End</strong> on the instrument. There is no automatic retry, and cancelling cannot undo a partially received update.</p>
+<h2 id="returning-to-korg">Returning to Korg</h2>
+<p>Keep a backup of your DataBeat OS patterns, select <strong>Korg volca sample 1.42</strong> in Studio and power on the Volca with <strong>MEMORY + PLAY</strong>. Wait for <strong>UPdt with the final dot lit</strong>, then release the buttons and confirm the transfer. Use the original Korg updater; no intermediate firmware or factory reset is needed. Follow the <a href="return-to-korg.html">full return procedure</a>.</p>
+<p>If Studio shows <strong>FUNC + PLAY</strong>, use <strong>MEMORY + PLAY</strong> for this return. Changing firmware does not convert pattern memories or make DataBeat OS's extra settings available in Korg.</p>
+<h2 id="after-restarting">After restarting</h2>
+<ul>
+<li>The version check (power on while holding REC) can show <strong>1.60</strong>: this is the updater header version used by DataBeat OS, not the pattern format.</li>
+<li>You do not need to install Korg 1.42 before DataBeat OS. Studio only uses Korg's updater file to build DataBeat OS.</li>
+<li>Saved samples remain. DataBeat OS uses the <strong>DataBeat OS 1.0 pattern format</strong>; see the <a href="databeat-os.html">DataBeat OS manual</a> and <a href="patterns.html">pattern banks</a>. Installing firmware does not convert the stored memories, and Studio does not convert banks: memories in another format stay in your backups and are not restored.</li>
+</ul>
+<h2 id="rights">Rights</h2>
+<p>The Korg updater remains Korg's and is used under Korg's licence agreement on your own computer. Studio contains only DataBeat OS's own changes and instructions for applying them to your copy; it distributes no Korg firmware. DataBeat OS is unofficial and not affiliated with or endorsed by Korg. See the third-party notices included with Studio.</p><p><a href="../index.html">← VolcaStudio XL</a></p><footer>© 2026 Michele Ibba · <a href="https://micheledatabeat.github.io/">DataBeat</a></footer></main></body></html>

@@ -1,0 +1,44 @@
+MIT License
+
+Copyright (c) 2026 MicheleDataBeat and VolcaStudio XL contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Scope
+
+The MIT License above covers VolcaStudio XL's own code, interface assets and
+documentation, and the groove template catalog in volcastudio/data/
+(grooves.json, grooves-xl.json), which is given to the community under the
+same terms.
+
+It does not replace the terms of the parts listed below, which keep their own:
+
+- vendor/korg-syro/ and the SYRO converter built from it (volcastudio-syro):
+  Korg Volca Sample SDK, BSD-3-Clause, Copyright (c) KORG Inc.
+  See vendor/korg-syro/COPYING.
+- volcastudio/data/firmware/: the DataBeat OS patch (DataBeat OS's own bytes and
+  instructions for applying them to the user's own copy of Korg's volca sample
+  1.42 updater). It is not covered by the MIT License; no open-source or
+  redistribution licence is granted for DataBeat OS. VolcaStudio XL contains
+  no Korg firmware; Korg's updater, downloaded by the user, remains under
+  Korg's licence agreement. See THIRD_PARTY.md.
+- Packaged builds contain Python, Qt/PySide6 (Desktop App), PortAudio, RtMidi, mido,
+  FFmpeg and other runtime components under their own licenses; their notices
+  are in the package's licenses/ folder and THIRD_PARTY.md.

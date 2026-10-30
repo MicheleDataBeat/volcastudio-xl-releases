@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Groove templates — DataBeat</title><link rel="stylesheet" href="../site.css"></head><body><main class="doc"><header class="top"><a class="brand" href="https://micheledatabeat.github.io/"><img src="../assets/databeat-mark.svg" alt="DataBeat" width="32" height="32"><span>DataBeat · VolcaStudio XL</span></a></header><h1 id="groove-templates">Groove templates</h1>
+<p>The groove editor targets the <strong>DataBeat OS 1.0 pattern format</strong> in the Desktop App and the Browser App. The catalog ships with both apps and is shared with the community under the MIT License (only quantized timing values; no audio, MIDI or groove files). It offers 217 timing profiles and 270 named source/instrument/bar aliases: MPC3000, coordinated Dilla instrument grids, analytical straight/quintuple/sextuple/septuple swing, and two D'Angelo selections. Source fractions, family identities and measured/reconstructed positions remain available in each template's provenance.</p>
+<p>Templates use −15…+15 microsteps, each 1/32 of a step. Reference <strong>SWING 0</strong>; instrument swing adds to the template. Editing microtiming on the instrument subsequently edits the groove. No extra firmware effect or DSP is involved.</p>
+<h2 id="preserve-or-reset--groove">Preserve or reset + groove</h2>
+<p><strong>Preserve</strong> changes only the sixteen microtiming values and their valid bits in assigned parts. Notes, sample IDs, all Predictability selections, packed motion, bar filtering, echo, ratchet, slicing, loop, scales and other data remain intact. It requires a local copy of every selected memory. A new backup is optional.</p>
+<p>A native (stock) pattern takes the DataBeat OS 1.0 pattern format exactly when it is saved with a groove; apart from the format itself, only its timing bytes change. A memory in another extension format is refused: grooves never convert formats.</p>
+<p><strong>Reset + groove</strong> starts with neutral empty patterns in the DataBeat OS 1.0 pattern format, then applies the chosen templates. It needs no bank or backup. If originals are available, the rollback file retains only actual source data; missing memories are not represented as invented backups.</p>
+<p>A memory is a stored pattern (1–10); a part is its sample channel (1–10). The same part/template assignments apply to every selected memory. Repeat an operation with a different selection to give different memories different grids.</p>
+<h2 id="send-a-groove-bank">Send a groove bank</h2>
+<p><strong>Sending replaces the selected pattern memories.</strong> A bank saved earlier may replace later edits on the instrument. Back up those edits first if you want to keep them. Saving a bank on the computer does not change the Volca.</p>
+<h2 id="desktop-app-on-linux-windows-and-macos">Desktop App on Linux, Windows and macOS</h2>
+<ol>
+<li>Open <strong>03 / Grooves</strong>; open a pattern bank for preserve, or check Reset + groove.</li>
+<li>Choose memory checkboxes: <strong>Clear selection</strong> then one/several, or <strong>All 10 patterns</strong>.</li>
+<li>Assign templates to parts and click <strong>3 / Apply templates &amp; save bank…</strong>.</li>
+<li>Choose the audio output connected to SYNC IN, then <strong>4 / Send saved groove bank to Volca…</strong> and confirm the displayed memories.</li>
+</ol>
+<p>Saving alone does not change the instrument. Changing the plan invalidates its saved send selection; save again. Reopen the original full source bank before preserving memories absent from a previously saved subset.</p>
+<p>The application cannot retrieve pattern data through SYNC IN.</p><p><a href="../index.html">← VolcaStudio XL</a></p><footer>© 2026 Michele Ibba · <a href="https://micheledatabeat.github.io/">DataBeat</a></footer></main></body></html>

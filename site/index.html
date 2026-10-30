@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>VolcaStudio XL — DataBeat</title>
+<meta name="description" content="VolcaStudio XL — prepare and transfer sample kits, patterns, grooves and DataBeat OS firmware for the original Korg Volca Sample. Browser App for Google Chrome, Desktop App for the desktop.">
+<link rel="icon" href="assets/databeat-mark.svg" type="image/svg+xml">
+<link rel="canonical" href="https://micheledatabeat.github.io/volcastudio-xl-releases/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VolcaStudio XL — DataBeat">
+<meta property="og:description" content="Samples, patterns, grooves and DataBeat OS for the original Volca Sample. Browser App and Desktop App.">
+<meta property="og:url" content="https://micheledatabeat.github.io/volcastudio-xl-releases/">
+<meta property="og:image" content="https://micheledatabeat.github.io/volcastudio-xl-releases/assets/volcastudio-xl-editions.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://micheledatabeat.github.io/" aria-label="DataBeat home">
+    <img src="assets/databeat-mark.svg" alt="" width="44" height="44">
+    <div><p class="kicker">DataBeat · Michele Ibba</p><p class="name">VolcaStudio XL</p></div>
+  </a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="it">Italiano</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 data-i18n="title">Prepare sample kits for the original Volca Sample</h1>
+    <p class="lead" data-i18n="lead">VolcaStudio XL prepares and transfers sample kits, patterns, grooves and DataBeat OS firmware. It comes in two editions for Windows, macOS and Linux: the Browser App (opens in Google Chrome) and the Desktop App.</p>
+    <p class="pick" data-i18n="pick">Not sure which one to pick? Start with the Browser App: you download it, open it, and it works in Google Chrome, with nothing to set up. It’s the easiest way in.</p>
+    <div class="cta-row">
+      <a class="cta" id="cta" href="#downloads"><span data-i18n="cta">Download Browser App</span></a>
+      <a class="cta" id="cta-desktop" href="#downloads"><span data-i18n="ctaDesktop">Download Desktop App</span></a>
+    </div>
+    <p class="for" id="cta-for"></p>
+    <p class="other" id="other"></p>
+  </section>
+
+  <figure class="edition-preview">
+    <img src="assets/volcastudio-xl-editions.svg" alt="Desktop App and Browser App with the same demo kit" width="3840" height="2160" loading="lazy">
+    <figcaption data-i18n="preview">Desktop App and Browser App · real interfaces, one demo kit.</figcaption>
+  </figure>
+
+  <section class="steps">
+    <h2 data-i18n="howTitle">Three steps</h2>
+    <ol>
+      <li><strong data-i18n="s1t">Download</strong><span data-i18n="s1">The button suggests a package for your operating system. Check the architecture and requirements; all packages are listed below.</span></li>
+      <li><strong data-i18n="s2t">Open</strong><span id="open-step" data-i18n="s2">Open the downloaded file, then open “VolcaStudio XL Browser App”.</span></li>
+      <li><strong data-i18n="s3t">Work</strong><span data-i18n="s3">The local helper opens the Browser App in Chrome. Add samples, save a kit, then review the transfer before sending.</span></li>
+    </ol>
+    <p class="note" id="first-open"></p>
+  </section>
+
+  <section class="included">
+    <h2 data-i18n="inTitle">In VolcaStudio XL</h2>
+    <div class="cards">
+      <article>
+        <h3 data-i18n="fwTitle">DataBeat OS 1.0</h3>
+        <p data-i18n="fw">Studio contains no firmware. Download the official Korg volca sample 1.42 updater from korg.com and add it in the Firmware section of either edition. Studio builds DataBeat OS 1.0 from it on your computer, checks the result and keeps the Korg updater to restore Korg’s firmware.</p>
+        <p><a href="docs/firmware.html" data-i18n="fwLink">Firmware guide</a> · <a href="docs/databeat-os.html" data-i18n="fwManual">DataBeat OS manual</a></p>
+      </article>
+      <article>
+        <h3 data-i18n="grTitle">270 groove templates</h3>
+        <p data-i18n="gr">MPC3000, Dilla-inspired instrument grids, analytical swings and D’Angelo selections: templates that change timing in DataBeat OS patterns. The catalog contains timing values, without source audio or MIDI files.</p>
+      </article>
+      <article>
+        <h3 data-i18n="freeTitle">Application and firmware licences</h3>
+        <p data-i18n="free">VolcaStudio XL is MIT-licensed. The Korg SYRO encoder keeps Korg’s BSD-3-Clause license. Studio contains no Korg firmware: you supply the Korg updater yourself, under Korg’s licence.</p>
+        <p><a id="repo-link" href="https://github.com/MicheleDataBeat/volcastudio-xl-releases/releases" data-i18n="repoLink">All versions and release notes</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="editions">
+    <h2 data-i18n="edTitle">Two editions, one studio</h2>
+    <div class="cards">
+      <article><h3>Browser App</h3><p data-i18n="edBrowser">A locally installed application that opens in Google Chrome. Windows x64, macOS on Apple silicon, Linux x86-64. Chrome is installed separately.</p></article>
+      <article><h3>Desktop App</h3><p data-i18n="edDesktop">Native desktop application. Windows x64, macOS on Apple silicon, Linux x86-64.</p></article>
+    </div>
+    <p class="note" data-i18n="edShared">Both share libraries, kits, pattern banks and firmware on the same computer. The Browser App keeps separate audio and MIDI device choices.</p>
+  </section>
+
+  <section class="facts">
+    <div>
+      <h2 data-i18n="needTitle">You need</h2>
+      <ul>
+        <li data-i18n="need1">Google Chrome (free: google.com/chrome).</li>
+        <li data-i18n="need2">An original Volca Sample and a 3.5 mm cable: computer audio out → Volca SYNC IN.</li>
+        <li data-i18n="need3">For pattern backups only: a USB-MIDI interface → Volca MIDI IN, and a cable from the Volca headphone output → computer input.</li>
+      </ul>
+    </div>
+    <div>
+      <h2 data-i18n="whyTitle">Why a download?</h2>
+      <p data-i18n="why">The Browser App opens a local workspace in Chrome. The included helper prepares your files and connects to the audio and MIDI devices you choose. No terminal, Python installation or account is needed.</p>
+    </div>
+  </section>
+
+  <section class="downloads" id="downloads">
+    <h2 data-i18n="allTitle">All downloads</h2>
+    <div class="scroll">
+    <table>
+      <thead><tr><th data-i18n="edition">Edition</th><th data-i18n="system">System</th><th data-i18n="file">File</th><th>SHA-256</th></tr></thead>
+      <tbody id="download-rows"><tr><td colspan="4" data-i18n="none">The download list is unavailable or loading. Use All versions and release notes for packages.</td></tr></tbody>
+    </table>
+    </div>
+    <p><a href="https://github.com/MicheleDataBeat/volcastudio-xl-releases/releases">All versions and release notes / Tutte le versioni e le note di rilascio</a></p>
+    <p class="note"><a href="docs/browser-quick-start.html" id="guide-link" data-i18n="guide">Step-by-step guide (no terminal needed)</a></p>
+  </section>
+</main>
+
+<footer>
+  <p class="footer-brand"><a href="https://micheledatabeat.github.io/">DataBeat</a> · Michele Ibba · © 2026</p>
+  <p data-i18n="foot">VolcaStudio XL is an independent project for the first-generation Korg Volca Sample. It is not affiliated with Korg. “Signals sent” means the app finished playing; only the Volca can show what it received.</p>
+</footer>
+</body>
+</html>
